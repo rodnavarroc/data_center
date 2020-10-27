@@ -1,0 +1,11 @@
+C:\Users\78699\Desktop\DataCenter\bin\Debug\DataCenter.exe.config
+C:\Users\78699\Desktop\DataCenter\bin\Debug\DataCenter.exe
+C:\Users\78699\Desktop\DataCenter\bin\Debug\DataCenter.pdb
+C:\Users\78699\Desktop\DataCenter\bin\Debug\DataCenter.xml
+C:\Users\78699\Desktop\DataCenter\obj\Debug\DataCenter.vbprojAssemblyReference.cache
+C:\Users\78699\Desktop\DataCenter\obj\Debug\DataCenter.Form1.resources
+C:\Users\78699\Desktop\DataCenter\obj\Debug\DataCenter.Resources.resources
+C:\Users\78699\Desktop\DataCenter\obj\Debug\DataCenter.vbproj.GenerateResource.cache
+C:\Users\78699\Desktop\DataCenter\obj\Debug\DataCenter.exe
+C:\Users\78699\Desktop\DataCenter\obj\Debug\DataCenter.xml
+C:\Users\78699\Desktop\DataCenter\obj\Debug\DataCenter.pdb
