@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,16 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
@@ -74,29 +75,33 @@ Partial Class Form1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnFalla = New System.Windows.Forms.Button()
+        Me.btnSimular = New System.Windows.Forms.Button()
+        Me.btnCausar = New System.Windows.Forms.Button()
+        Me.btnProvocar = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.btnActualizar = New System.Windows.Forms.Button()
+        Me.txtOff = New System.Windows.Forms.TextBox()
+        Me.btnOff = New System.Windows.Forms.Button()
+        Me.txtExt = New System.Windows.Forms.TextBox()
+        Me.txtInterior = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox44 = New System.Windows.Forms.PictureBox()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.btnMantenimiento = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.txtEventos = New System.Windows.Forms.TextBox()
+        Me.btnRed = New System.Windows.Forms.Button()
+        Me.btnIniciar = New System.Windows.Forms.Button()
+        Me.btnDetener = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -145,23 +150,23 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'PictureBox2
+        'PictureBox6
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.PictureBox2.Location = New System.Drawing.Point(42, 78)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(113, 57)
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.PictureBox6.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.PictureBox6.Location = New System.Drawing.Point(42, 78)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(113, 57)
+        Me.PictureBox6.TabIndex = 1
+        Me.PictureBox6.TabStop = False
         '
-        'PictureBox3
+        'PictureBox5
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.PictureBox3.Location = New System.Drawing.Point(42, 157)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(113, 57)
-        Me.PictureBox3.TabIndex = 2
-        Me.PictureBox3.TabStop = False
+        Me.PictureBox5.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.PictureBox5.Location = New System.Drawing.Point(42, 157)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(113, 57)
+        Me.PictureBox5.TabIndex = 2
+        Me.PictureBox5.TabStop = False
         '
         'PictureBox4
         '
@@ -172,23 +177,23 @@ Partial Class Form1
         Me.PictureBox4.TabIndex = 3
         Me.PictureBox4.TabStop = False
         '
-        'PictureBox5
+        'PictureBox3
         '
-        Me.PictureBox5.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.PictureBox5.Location = New System.Drawing.Point(42, 312)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(113, 57)
-        Me.PictureBox5.TabIndex = 4
-        Me.PictureBox5.TabStop = False
+        Me.PictureBox3.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.PictureBox3.Location = New System.Drawing.Point(42, 312)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(113, 57)
+        Me.PictureBox3.TabIndex = 4
+        Me.PictureBox3.TabStop = False
         '
-        'PictureBox6
+        'PictureBox2
         '
-        Me.PictureBox6.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.PictureBox6.Location = New System.Drawing.Point(42, 387)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(113, 57)
-        Me.PictureBox6.TabIndex = 5
-        Me.PictureBox6.TabStop = False
+        Me.PictureBox2.BackColor = System.Drawing.Color.LightSteelBlue
+        Me.PictureBox2.Location = New System.Drawing.Point(42, 387)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(113, 57)
+        Me.PictureBox2.TabIndex = 5
+        Me.PictureBox2.TabStop = False
         '
         'PictureBox7
         '
@@ -623,54 +628,58 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Label9.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label9.Location = New System.Drawing.Point(913, 245)
+        Me.Label9.Location = New System.Drawing.Point(913, 264)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(155, 18)
         Me.Label9.TabIndex = 56
         Me.Label9.Text = "Control de incidentes"
         '
-        'Button1
+        'btnFalla
         '
-        Me.Button1.Location = New System.Drawing.Point(916, 279)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(152, 23)
-        Me.Button1.TabIndex = 57
-        Me.Button1.Text = "Provocar falla eléctrica"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnFalla.Enabled = False
+        Me.btnFalla.Location = New System.Drawing.Point(916, 291)
+        Me.btnFalla.Name = "btnFalla"
+        Me.btnFalla.Size = New System.Drawing.Size(152, 23)
+        Me.btnFalla.TabIndex = 57
+        Me.btnFalla.Text = "Provocar falla eléctrica"
+        Me.btnFalla.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnSimular
         '
-        Me.Button2.Location = New System.Drawing.Point(916, 308)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(152, 23)
-        Me.Button2.TabIndex = 58
-        Me.Button2.Text = "Simular alerta de incendio"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnSimular.Enabled = False
+        Me.btnSimular.Location = New System.Drawing.Point(916, 320)
+        Me.btnSimular.Name = "btnSimular"
+        Me.btnSimular.Size = New System.Drawing.Size(152, 23)
+        Me.btnSimular.TabIndex = 58
+        Me.btnSimular.Text = "Simular alerta de incendio"
+        Me.btnSimular.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnCausar
         '
-        Me.Button3.Location = New System.Drawing.Point(916, 337)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(152, 39)
-        Me.Button3.TabIndex = 59
-        Me.Button3.Text = "Causar apagón de servidores"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnCausar.Enabled = False
+        Me.btnCausar.Location = New System.Drawing.Point(916, 349)
+        Me.btnCausar.Name = "btnCausar"
+        Me.btnCausar.Size = New System.Drawing.Size(152, 39)
+        Me.btnCausar.TabIndex = 59
+        Me.btnCausar.Text = "Causar apagón de servidores"
+        Me.btnCausar.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnProvocar
         '
-        Me.Button4.Location = New System.Drawing.Point(916, 383)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(152, 39)
-        Me.Button4.TabIndex = 60
-        Me.Button4.Text = "Provocar sobrecarga de información"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnProvocar.Enabled = False
+        Me.btnProvocar.Location = New System.Drawing.Point(916, 395)
+        Me.btnProvocar.Name = "btnProvocar"
+        Me.btnProvocar.Size = New System.Drawing.Size(152, 39)
+        Me.btnProvocar.TabIndex = 60
+        Me.btnProvocar.Text = "Provocar sobrecarga de información"
+        Me.btnProvocar.UseVisualStyleBackColor = True
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Label10.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label10.Location = New System.Drawing.Point(870, 178)
+        Me.Label10.Location = New System.Drawing.Point(867, 179)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(120, 18)
         Me.Label10.TabIndex = 61
@@ -685,53 +694,57 @@ Partial Class Form1
         Me.Label11.Size = New System.Drawing.Size(0, 18)
         Me.Label11.TabIndex = 62
         '
-        'Button5
+        'btnActualizar
         '
-        Me.Button5.Location = New System.Drawing.Point(904, 131)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(152, 23)
-        Me.Button5.TabIndex = 63
-        Me.Button5.Text = "Actualizar valores"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnActualizar.Enabled = False
+        Me.btnActualizar.Location = New System.Drawing.Point(916, 126)
+        Me.btnActualizar.Name = "btnActualizar"
+        Me.btnActualizar.Size = New System.Drawing.Size(152, 23)
+        Me.btnActualizar.TabIndex = 63
+        Me.btnActualizar.Text = "Actualizar valores"
+        Me.btnActualizar.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtOff
         '
-        Me.TextBox1.Location = New System.Drawing.Point(994, 178)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(60, 20)
-        Me.TextBox1.TabIndex = 64
+        Me.txtOff.Enabled = False
+        Me.txtOff.Location = New System.Drawing.Point(988, 179)
+        Me.txtOff.Name = "txtOff"
+        Me.txtOff.Size = New System.Drawing.Size(60, 20)
+        Me.txtOff.TabIndex = 64
         '
-        'Button6
+        'btnOff
         '
-        Me.Button6.Location = New System.Drawing.Point(1062, 177)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(46, 23)
-        Me.Button6.TabIndex = 65
-        Me.Button6.Text = "Off"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnOff.Location = New System.Drawing.Point(1054, 177)
+        Me.btnOff.Name = "btnOff"
+        Me.btnOff.Size = New System.Drawing.Size(50, 23)
+        Me.btnOff.TabIndex = 65
+        Me.btnOff.Text = "On/Off"
+        Me.btnOff.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'txtExt
         '
-        Me.TextBox2.Location = New System.Drawing.Point(1027, 64)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(77, 20)
-        Me.TextBox2.TabIndex = 66
+        Me.txtExt.Enabled = False
+        Me.txtExt.Location = New System.Drawing.Point(1027, 64)
+        Me.txtExt.Name = "txtExt"
+        Me.txtExt.Size = New System.Drawing.Size(77, 20)
+        Me.txtExt.TabIndex = 66
         '
-        'TextBox3
+        'txtInterior
         '
-        Me.TextBox3.Location = New System.Drawing.Point(1027, 91)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(77, 20)
-        Me.TextBox3.TabIndex = 67
+        Me.txtInterior.Enabled = False
+        Me.txtInterior.Location = New System.Drawing.Point(1027, 91)
+        Me.txtInterior.Name = "txtInterior"
+        Me.txtInterior.Size = New System.Drawing.Size(77, 20)
+        Me.txtInterior.TabIndex = 67
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Label12.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label12.Location = New System.Drawing.Point(876, 518)
+        Me.Label12.Font = New System.Drawing.Font("Arial", 8.0!)
+        Me.Label12.Location = New System.Drawing.Point(926, 518)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(206, 18)
+        Me.Label12.Size = New System.Drawing.Size(142, 14)
         Me.Label12.TabIndex = 68
         Me.Label12.Text = "Hora de la simulación: 00:00"
         '
@@ -744,14 +757,15 @@ Partial Class Form1
         Me.PictureBox44.TabIndex = 69
         Me.PictureBox44.TabStop = False
         '
-        'Button7
+        'btnMantenimiento
         '
-        Me.Button7.Location = New System.Drawing.Point(916, 462)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(152, 25)
-        Me.Button7.TabIndex = 74
-        Me.Button7.Text = "Modo mantenimiento"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnMantenimiento.Enabled = False
+        Me.btnMantenimiento.Location = New System.Drawing.Point(916, 474)
+        Me.btnMantenimiento.Name = "btnMantenimiento"
+        Me.btnMantenimiento.Size = New System.Drawing.Size(152, 25)
+        Me.btnMantenimiento.TabIndex = 74
+        Me.btnMantenimiento.Text = "Modo mantenimiento"
+        Me.btnMantenimiento.UseVisualStyleBackColor = True
         '
         'Label13
         '
@@ -764,25 +778,52 @@ Partial Class Form1
         Me.Label13.TabIndex = 75
         Me.Label13.Text = "Registro de eventos"
         '
-        'TextBox4
+        'txtEventos
         '
-        Me.TextBox4.Location = New System.Drawing.Point(657, 91)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(180, 445)
-        Me.TextBox4.TabIndex = 76
-        Me.TextBox4.Text = "La simulación ha iniciado correctamente, todos los servidores se encuentran opera" &
-    "tivos."
+        Me.txtEventos.Location = New System.Drawing.Point(657, 91)
+        Me.txtEventos.Multiline = True
+        Me.txtEventos.Name = "txtEventos"
+        Me.txtEventos.ReadOnly = True
+        Me.txtEventos.Size = New System.Drawing.Size(180, 445)
+        Me.txtEventos.TabIndex = 76
+        Me.txtEventos.Text = "..."
         '
-        'Button8
+        'btnRed
         '
-        Me.Button8.Location = New System.Drawing.Point(916, 428)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(152, 27)
-        Me.Button8.TabIndex = 77
-        Me.Button8.Text = "Provocar caída de la red"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btnRed.Enabled = False
+        Me.btnRed.Location = New System.Drawing.Point(916, 440)
+        Me.btnRed.Name = "btnRed"
+        Me.btnRed.Size = New System.Drawing.Size(152, 27)
+        Me.btnRed.TabIndex = 77
+        Me.btnRed.Text = "Provocar caída de la red"
+        Me.btnRed.UseVisualStyleBackColor = True
+        '
+        'btnIniciar
+        '
+        Me.btnIniciar.Location = New System.Drawing.Point(916, 210)
+        Me.btnIniciar.Name = "btnIniciar"
+        Me.btnIniciar.Size = New System.Drawing.Size(152, 23)
+        Me.btnIniciar.TabIndex = 78
+        Me.btnIniciar.Text = "Iniciar"
+        Me.btnIniciar.UseVisualStyleBackColor = True
+        '
+        'btnDetener
+        '
+        Me.btnDetener.Enabled = False
+        Me.btnDetener.Location = New System.Drawing.Point(916, 235)
+        Me.btnDetener.Name = "btnDetener"
+        Me.btnDetener.Size = New System.Drawing.Size(152, 23)
+        Me.btnDetener.TabIndex = 79
+        Me.btnDetener.Text = "Detener"
+        Me.btnDetener.UseVisualStyleBackColor = True
+        '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
+        'Timer2
+        '
+        Me.Timer2.Interval = 1000
         '
         'Form1
         '
@@ -790,22 +831,24 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1131, 571)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.btnDetener)
+        Me.Controls.Add(Me.btnIniciar)
+        Me.Controls.Add(Me.btnRed)
+        Me.Controls.Add(Me.txtEventos)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.btnMantenimiento)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.txtInterior)
+        Me.Controls.Add(Me.txtExt)
+        Me.Controls.Add(Me.btnOff)
+        Me.Controls.Add(Me.txtOff)
+        Me.Controls.Add(Me.btnActualizar)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnProvocar)
+        Me.Controls.Add(Me.btnCausar)
+        Me.Controls.Add(Me.btnSimular)
+        Me.Controls.Add(Me.btnFalla)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -851,11 +894,11 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.PictureBox10)
         Me.Controls.Add(Me.PictureBox11)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox44)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -864,11 +907,11 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Data Center | Simulador"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -912,11 +955,11 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PictureBox9 As PictureBox
@@ -962,21 +1005,25 @@ Partial Class Form1
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnFalla As Button
+    Friend WithEvents btnSimular As Button
+    Friend WithEvents btnCausar As Button
+    Friend WithEvents btnProvocar As Button
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Button5 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button6 As Button
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents btnActualizar As Button
+    Friend WithEvents txtOff As TextBox
+    Friend WithEvents btnOff As Button
+    Friend WithEvents txtExt As TextBox
+    Friend WithEvents txtInterior As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents PictureBox44 As PictureBox
-    Friend WithEvents Button7 As Button
+    Friend WithEvents btnMantenimiento As Button
     Friend WithEvents Label13 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Button8 As Button
+    Friend WithEvents txtEventos As TextBox
+    Friend WithEvents btnRed As Button
+    Friend WithEvents btnIniciar As Button
+    Friend WithEvents btnDetener As Button
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Timer2 As Timer
 End Class
