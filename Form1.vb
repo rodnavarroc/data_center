@@ -29,7 +29,7 @@
         End If
         Dim StringInterior As String = interior.ToString 'Hacemos string la temperatura para pasarla al txtField
         Dim StringExterior As String = exterior.ToString
-        eventos = "[00:00]Simulación iniciada." & vbCrLf & "Temperatura exterior: 25°C" & vbCrLf & "Temperatura interior: 17°C" 'Añadimos este texto al string eventos
+        eventos = "[00:00] Simulación iniciada." & vbCrLf & "Temperatura exterior: 25°C" & vbCrLf & "Temperatura interior: 17°C" 'Añadimos este texto al string eventos
         txtEventos.Text = eventos 'se cambia el texto del cuadro "Registro de eventos"
         txtInterior.Enabled = True
         txtExt.Enabled = True
@@ -48,6 +48,27 @@
         txtExt.Text = StringExterior & "°C"
         txtInterior.Enabled = False
 
+        PictureBox2.BackColor = Color.LightSteelBlue
+        PictureBox3.BackColor = Color.LightSteelBlue
+        PictureBox4.BackColor = Color.LightSteelBlue
+        PictureBox5.BackColor = Color.LightSteelBlue
+        PictureBox6.BackColor = Color.LightSteelBlue
+        PictureBox7.BackColor = Color.LightSteelBlue
+        PictureBox8.BackColor = Color.LightSteelBlue
+        PictureBox9.BackColor = Color.LightSteelBlue
+        PictureBox10.BackColor = Color.LightSteelBlue
+        PictureBox11.BackColor = Color.LightSteelBlue
+        PictureBox12.BackColor = Color.LightSteelBlue
+        PictureBox13.BackColor = Color.LightSteelBlue
+        PictureBox14.BackColor = Color.LightSteelBlue
+        PictureBox15.BackColor = Color.LightSteelBlue
+        PictureBox16.BackColor = Color.LightSteelBlue
+        PictureBox17.BackColor = Color.LightSteelBlue
+        PictureBox18.BackColor = Color.LightSteelBlue
+        PictureBox19.BackColor = Color.LightSteelBlue
+        PictureBox20.BackColor = Color.LightSteelBlue
+        PictureBox21.BackColor = Color.LightSteelBlue
+
 
     End Sub
 
@@ -61,201 +82,201 @@
                 Case 1
                     If PictureBox2.BackColor = Color.LightSteelBlue Then 'Si el servidor es color Azul, lo cambiamos a gris y notificamos que se apagó.
                         PictureBox2.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 1 se ha apagado." 'Igualamos el string eventos a eventos para no perder la información anterior y le agregamos que se apagó el servidor.
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 1 se ha apagado." 'Igualamos el string eventos a eventos para no perder la información anterior y le agregamos que se apagó el servidor.
                         txtEventos.Text = eventos 'Mostramos el string en el registro de eventos.
                     ElseIf PictureBox2.BackColor = Color.Gray Then 'Si el servidor es color Gris, lo cambiamos a azul y notificamos que se inició.
                         PictureBox2.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 1 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 1 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 2
                     If PictureBox3.BackColor = Color.LightSteelBlue Then
                         PictureBox3.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 2 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 2 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox3.BackColor = Color.Gray Then
                         PictureBox3.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 2 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 2 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 3
                     If PictureBox4.BackColor = Color.LightSteelBlue Then
                         PictureBox4.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 3 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 3 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox4.BackColor = Color.Gray Then
                         PictureBox4.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 3 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 3 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 4
                     If PictureBox5.BackColor = Color.LightSteelBlue Then
                         PictureBox5.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 4 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 4 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox5.BackColor = Color.Gray Then
                         PictureBox5.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 4 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 4 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 5
                     If PictureBox6.BackColor = Color.LightSteelBlue Then
                         PictureBox6.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 5 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 5 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox6.BackColor = Color.Gray Then
                         PictureBox6.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 5 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 5 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 6
                     If PictureBox7.BackColor = Color.LightSteelBlue Then
                         PictureBox7.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 6 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 6 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox7.BackColor = Color.Gray Then
                         PictureBox7.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 6 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 6 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 7
                     If PictureBox8.BackColor = Color.LightSteelBlue Then
                         PictureBox8.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 7 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 7 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox8.BackColor = Color.Gray Then
                         PictureBox8.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 7 se ha encendido."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 7 se ha encendido."
                         txtEventos.Text = eventos
                     End If
                 Case 8
                     If PictureBox9.BackColor = Color.LightSteelBlue Then
                         PictureBox9.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 8 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 8 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox9.BackColor = Color.Gray Then
                         PictureBox9.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 8 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 8 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 9
                     If PictureBox10.BackColor = Color.LightSteelBlue Then
                         PictureBox10.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 9 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 9 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox10.BackColor = Color.Gray Then
                         PictureBox10.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 9 se ha encendido."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 9 se ha encendido."
                         txtEventos.Text = eventos
                     End If
                 Case 10
                     If PictureBox11.BackColor = Color.LightSteelBlue Then
                         PictureBox11.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 10 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 10 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox11.BackColor = Color.Gray Then
                         PictureBox11.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 10 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 10 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 11
                     If PictureBox12.BackColor = Color.LightSteelBlue Then
                         PictureBox12.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 11 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 11 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox12.BackColor = Color.Gray Then
                         PictureBox12.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 11 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 11 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 12
                     If PictureBox13.BackColor = Color.LightSteelBlue Then
                         PictureBox13.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 12 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 12 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox13.BackColor = Color.Gray Then
                         PictureBox13.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 12 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 12 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 13
                     If PictureBox14.BackColor = Color.LightSteelBlue Then
                         PictureBox14.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 13 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 13 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox14.BackColor = Color.Gray Then
                         PictureBox14.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 13 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 13 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 14
                     If PictureBox15.BackColor = Color.LightSteelBlue Then
                         PictureBox15.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 14 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 14 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox15.BackColor = Color.Gray Then
                         PictureBox15.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 14 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 14 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 15
                     If PictureBox16.BackColor = Color.LightSteelBlue Then
                         PictureBox16.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 15 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 15 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox16.BackColor = Color.Gray Then
                         PictureBox16.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 15 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 15 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 16
                     If PictureBox17.BackColor = Color.LightSteelBlue Then
                         PictureBox17.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 16 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 16 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox17.BackColor = Color.Gray Then
                         PictureBox17.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 16 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 16 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 17
                     If PictureBox18.BackColor = Color.LightSteelBlue Then
                         PictureBox18.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 17 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 17 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox18.BackColor = Color.Gray Then
                         PictureBox18.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 17 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 17 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 18
                     If PictureBox19.BackColor = Color.LightSteelBlue Then
                         PictureBox19.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 18 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 18 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox19.BackColor = Color.Gray Then
                         PictureBox19.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 18 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 18 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 19
                     If PictureBox20.BackColor = Color.LightSteelBlue Then
                         PictureBox20.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 19 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 19 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox20.BackColor = Color.Gray Then
                         PictureBox20.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 19 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 19 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case 20
                     If PictureBox21.BackColor = Color.LightSteelBlue Then
                         PictureBox21.BackColor = Color.Gray
-                        eventos = eventos & vbCrLf & "El servidor 20 se ha apagado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 20 se ha apagado."
                         txtEventos.Text = eventos
                     ElseIf PictureBox21.BackColor = Color.Gray Then
                         PictureBox21.BackColor = Color.LightSteelBlue
-                        eventos = eventos & vbCrLf & "El servidor 20 se ha iniciado."
+                        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "El servidor 20 se ha iniciado."
                         txtEventos.Text = eventos
                     End If
                 Case Else 'Cualquier otro numero que no sea del 1 al 20 mostrará este mensaje.
@@ -356,31 +377,30 @@
     End Sub
 
     Private Sub btnProvocar_Click(sender As Object, e As EventArgs) Handles btnProvocar.Click
-        Timer2.Interval = 3000
-        If Not Timer2.Enabled Then 'already running?
-            Timer2.Start() 'no
-        End If
-
         If PictureBox2.BackColor = Color.LightSteelBlue And
-        PictureBox3.BackColor = Color.LightSteelBlue And
-        PictureBox4.BackColor = Color.LightSteelBlue And
-        PictureBox5.BackColor = Color.LightSteelBlue And
-        PictureBox6.BackColor = Color.LightSteelBlue And
-        PictureBox7.BackColor = Color.LightSteelBlue And
-        PictureBox8.BackColor = Color.LightSteelBlue And
-        PictureBox9.BackColor = Color.LightSteelBlue And
-        PictureBox10.BackColor = Color.LightSteelBlue And
-        PictureBox11.BackColor = Color.LightSteelBlue And
-        PictureBox12.BackColor = Color.LightSteelBlue And
-        PictureBox13.BackColor = Color.LightSteelBlue And
-        PictureBox14.BackColor = Color.LightSteelBlue And
-        PictureBox15.BackColor = Color.LightSteelBlue And
-        PictureBox16.BackColor = Color.LightSteelBlue And
-        PictureBox17.BackColor = Color.LightSteelBlue And
-        PictureBox18.BackColor = Color.LightSteelBlue And
-        PictureBox19.BackColor = Color.LightSteelBlue And
-        PictureBox20.BackColor = Color.LightSteelBlue And
-        PictureBox21.BackColor = Color.LightSteelBlue Then
+       PictureBox3.BackColor = Color.LightSteelBlue And
+       PictureBox4.BackColor = Color.LightSteelBlue And
+       PictureBox5.BackColor = Color.LightSteelBlue And
+       PictureBox6.BackColor = Color.LightSteelBlue And
+       PictureBox7.BackColor = Color.LightSteelBlue And
+       PictureBox8.BackColor = Color.LightSteelBlue And
+       PictureBox9.BackColor = Color.LightSteelBlue And
+       PictureBox10.BackColor = Color.LightSteelBlue And
+       PictureBox11.BackColor = Color.LightSteelBlue And
+       PictureBox12.BackColor = Color.LightSteelBlue And
+       PictureBox13.BackColor = Color.LightSteelBlue And
+       PictureBox14.BackColor = Color.LightSteelBlue And
+       PictureBox15.BackColor = Color.LightSteelBlue And
+       PictureBox16.BackColor = Color.LightSteelBlue And
+       PictureBox17.BackColor = Color.LightSteelBlue And
+       PictureBox18.BackColor = Color.LightSteelBlue And
+       PictureBox19.BackColor = Color.LightSteelBlue And
+       PictureBox20.BackColor = Color.LightSteelBlue And
+       PictureBox21.BackColor = Color.LightSteelBlue Then
+            Timer2.Interval = 3000
+            If Not Timer2.Enabled Then 'already running?
+                Timer2.Start() 'no
+            End If
             PictureBox2.BackColor = Color.Yellow
             PictureBox3.BackColor = Color.Yellow
             PictureBox4.BackColor = Color.Yellow
@@ -401,7 +421,7 @@
             PictureBox19.BackColor = Color.Yellow
             PictureBox20.BackColor = Color.Yellow
             PictureBox21.BackColor = Color.Yellow
-            eventos = eventos & vbCrLf & "[" & Tiempo & "]" & "Los servidores están experimentando una sobrecarga de información." & vbCrLf & "--Iniciando protocolo de restauración--"
+            eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "Los servidores están experimentando una sobrecarga de información." & vbCrLf & "--Iniciando protocolo de restauración--"
             txtEventos.Text = eventos
         End If
     End Sub
@@ -439,9 +459,28 @@
         PictureBox19.BackColor = Color.LightSteelBlue
         PictureBox20.BackColor = Color.LightSteelBlue
         PictureBox21.BackColor = Color.LightSteelBlue
-        eventos = eventos & vbCrLf & "Completado." & vbCrLf & "[" & Tiempo & "]" & "Servidores operando normalmente."
+        eventos = eventos & vbCrLf & "Completado." & vbCrLf & "[" & Tiempo & "] " & "Servidores operando normalmente."
         txtEventos.Text = eventos
         Timer2.Stop()
+    End Sub
+
+    Private Sub btnDetener_Click(sender As Object, e As EventArgs) Handles btnDetener.Click
+        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "La simulación se ha detenido."
+        txtInterior.Enabled = False
+        txtExt.Enabled = False
+        txtOff.Enabled = False
+        btnActualizar.Enabled = False
+        btnCausar.Enabled = False
+        btnFalla.Enabled = False
+        btnMantenimiento.Enabled = False
+        btnOff.Enabled = False
+        btnProvocar.Enabled = False
+        btnRed.Enabled = False
+        btnSimular.Enabled = False
+        btnDetener.Enabled = False
+        btnIniciar.Enabled = True
+        txtEventos.Text = eventos
+        Timer1.Stop()
     End Sub
 End Class
 
