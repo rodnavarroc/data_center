@@ -7,8 +7,8 @@
     Public Shared exterior As Integer = 45
     Public Shared I As Long
     Public Shared X As Long
-    Public Shared Tt As Long = 0
-    Public Shared a As Long
+    Public Shared Tt As Long = -2
+    Public Shared a As Long = 1
     Public Shared apagon As String = ""
     Public Shared Tiempo As String = "00:00"
     Public Shared eventos As String = "" 'String eventos sirve para mostrar los eventos ocurridos en el registro de eventos.
@@ -77,8 +77,24 @@
         PictureBox19.BackColor = Color.LightSteelBlue
         PictureBox20.BackColor = Color.LightSteelBlue
         PictureBox21.BackColor = Color.LightSteelBlue
-
         PictureBox30.BackColor = Color.Red
+        PictureBox29.BackColor = Color.White
+        PictureBox43.BackColor = Color.White
+        PictureBox45.BackColor = Color.White
+        PictureBox41.BackColor = Color.Silver
+        PictureBox46.BackColor = Color.Silver
+        PictureBox40.BackColor = Color.Silver
+        PictureBox39.BackColor = Color.Silver
+        PictureBox35.BackColor = Color.Silver
+        PictureBox38.BackColor = Color.Silver
+        PictureBox34.BackColor = Color.Silver
+        PictureBox37.BackColor = Color.Silver
+        PictureBox33.BackColor = Color.Silver
+        PictureBox36.BackColor = Color.Silver
+        PictureBox32.BackColor = Color.Silver
+        Timer2.Stop()
+        Timer3.Stop()
+        Timer4.Stop()
 
     End Sub
 
@@ -316,6 +332,7 @@
     End Sub
 
     Private Sub btnCausar_Click(sender As Object, e As EventArgs) Handles btnCausar.Click
+        Tt = -1
         btnCausar.Enabled = False
 
         txtInterior.Enabled = False
@@ -328,11 +345,10 @@
         btnRed.Enabled = False
         btnSimular.Enabled = False
         btnDetener.Enabled = True
-        btnIniciar.Enabled = False
+        btnIniciar.Enabled = True
 
         'Cambio de color en la energía
         PictureBox30.BackColor = Color.White
-        PictureBox29.BackColor = Color.Red
         PictureBox41.BackColor = Color.White
         PictureBox46.BackColor = Color.White
         PictureBox40.BackColor = Color.White
@@ -374,21 +390,33 @@
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-        Timer3.Interval = 2000
+
+        If Tt = 1 Then
+            Timer4.Enabled = True
+            a = 2
+            Timer4.Start()
+            Timer4.Interval = 1500
+            Timer3.Stop()
+        End If
+
         If Tt = 0 Then
             PictureBox43.BackColor = Color.FromArgb(255, 128, 128)
             PictureBox45.BackColor = Color.FromArgb(255, 128, 128)
             PictureBox46.BackColor = Color.FromArgb(255, 128, 128)
             PictureBox40.BackColor = Color.FromArgb(255, 128, 128)
             PictureBox39.BackColor = Color.FromArgb(255, 128, 128)
-            Timer4.Enabled = True
-            a = 1
-            Timer4.Start()
-            Timer4.Interval = 1000
-            Timer3.Stop()
+            PictureBox35.BackColor = Color.FromArgb(255, 128, 128)
+            eventos = eventos & "[" & Tiempo & "] " & vbCrLf & "Se están arreglando fallas de la fuente de alimentación inicial"
+            txtEventos.Text = eventos
+            Tt = 1
         End If
 
-        If Tt = 1 Then
+        If Tt = -1 Then
+            PictureBox29.BackColor = Color.Red
+            Tt = 0
+        End If
+
+        If Tt = 2 Then
             PictureBox30.BackColor = Color.Red
             PictureBox29.BackColor = Color.White
             PictureBox43.BackColor = Color.White
@@ -420,105 +448,99 @@
             btnIniciar.Enabled = True
 
             Timer3.Stop()
-            Tt = 0
+            Tt = -2
         End If
 
     End Sub
 
     Private Sub Timer4_Tick(sender As Object, e As EventArgs) Handles Timer4.Tick
-        If Tt = 0 Then
-            If a = 1 Then
-                eventos = eventos & "[" & Tiempo & "] " & vbCrLf & "Se están arreglando fallas de la fuente de alimentación inicial" & vbCrLf
-                txtEventos.Text = eventos
-                PictureBox35.BackColor = Color.FromArgb(255, 128, 128)
-                Timer4.Interval = 500
-            End If
-            If a = 2 Then
-                PictureBox21.BackColor = Color.LightSteelBlue
-            End If
-            If a = 3 Then
-                PictureBox20.BackColor = Color.LightSteelBlue
-            End If
-            If a = 4 Then
-                PictureBox19.BackColor = Color.LightSteelBlue
-            End If
-            If a = 5 Then
-                PictureBox18.BackColor = Color.LightSteelBlue
-            End If
-            If a = 6 Then
-                PictureBox17.BackColor = Color.LightSteelBlue
-                Timer4.Interval = 1000
-            End If
-            If a = 7 Then
-                PictureBox38.BackColor = Color.FromArgb(255, 128, 128)
-                PictureBox34.BackColor = Color.FromArgb(255, 128, 128)
-                Timer4.Interval = 500
-            End If
-            If a = 8 Then
-                PictureBox16.BackColor = Color.LightSteelBlue
-            End If
-            If a = 9 Then
-                PictureBox15.BackColor = Color.LightSteelBlue
-            End If
-            If a = 10 Then
-                PictureBox14.BackColor = Color.LightSteelBlue
-            End If
-            If a = 11 Then
-                PictureBox13.BackColor = Color.LightSteelBlue
-            End If
-            If a = 12 Then
-                PictureBox12.BackColor = Color.LightSteelBlue
-                Timer4.Interval = 1000
-            End If
-            If a = 13 Then
-                PictureBox37.BackColor = Color.FromArgb(255, 128, 128)
-                PictureBox33.BackColor = Color.FromArgb(255, 128, 128)
-                Timer4.Interval = 500
-            End If
-            If a = 14 Then
-                PictureBox11.BackColor = Color.LightSteelBlue
-            End If
-            If a = 15 Then
-                PictureBox10.BackColor = Color.LightSteelBlue
-            End If
-            If a = 16 Then
-                PictureBox9.BackColor = Color.LightSteelBlue
-            End If
-            If a = 17 Then
-                PictureBox8.BackColor = Color.LightSteelBlue
-            End If
-            If a = 18 Then
-                PictureBox7.BackColor = Color.LightSteelBlue
-                Timer4.Interval = 1000
-            End If
-            If a = 19 Then
-                PictureBox36.BackColor = Color.FromArgb(255, 128, 128)
-                PictureBox32.BackColor = Color.FromArgb(255, 128, 128)
-                Timer4.Interval = 500
-            End If
-            If a = 20 Then
-                PictureBox6.BackColor = Color.LightSteelBlue
-            End If
-            If a = 21 Then
-                PictureBox5.BackColor = Color.LightSteelBlue
-            End If
-            If a = 22 Then
-                PictureBox4.BackColor = Color.LightSteelBlue
-            End If
-            If a = 23 Then
-                PictureBox3.BackColor = Color.LightSteelBlue
-            End If
-            If a = 24 Then
-                PictureBox2.BackColor = Color.LightSteelBlue
-                eventos = eventos & "[" & Tiempo & "] " & vbCrLf & "Se han arreglado los problemas, preparando cambio de fuente" & vbCrLf
-                txtEventos.Text = eventos
-                Tt = 1
-                Timer3.Enabled = True
-                Timer3.Start()
-                Timer4.Stop()
-            End If
-            a = a + 1
+        If a = 2 Then
+            PictureBox21.BackColor = Color.LightSteelBlue
         End If
+        If a = 3 Then
+            PictureBox20.BackColor = Color.LightSteelBlue
+        End If
+        If a = 4 Then
+            PictureBox19.BackColor = Color.LightSteelBlue
+        End If
+        If a = 5 Then
+            PictureBox18.BackColor = Color.LightSteelBlue
+        End If
+        If a = 6 Then
+            PictureBox17.BackColor = Color.LightSteelBlue
+            Timer4.Interval = 2000
+        End If
+        If a = 7 Then
+            PictureBox38.BackColor = Color.FromArgb(255, 128, 128)
+            PictureBox34.BackColor = Color.FromArgb(255, 128, 128)
+            Timer4.Interval = 1500
+        End If
+        If a = 8 Then
+            PictureBox16.BackColor = Color.LightSteelBlue
+        End If
+        If a = 9 Then
+            PictureBox15.BackColor = Color.LightSteelBlue
+        End If
+        If a = 10 Then
+            PictureBox14.BackColor = Color.LightSteelBlue
+        End If
+        If a = 11 Then
+            PictureBox13.BackColor = Color.LightSteelBlue
+        End If
+        If a = 12 Then
+            PictureBox12.BackColor = Color.LightSteelBlue
+            Timer4.Interval = 2000
+        End If
+        If a = 13 Then
+            PictureBox37.BackColor = Color.FromArgb(255, 128, 128)
+            PictureBox33.BackColor = Color.FromArgb(255, 128, 128)
+            Timer4.Interval = 1500
+        End If
+        If a = 14 Then
+            PictureBox11.BackColor = Color.LightSteelBlue
+        End If
+        If a = 15 Then
+            PictureBox10.BackColor = Color.LightSteelBlue
+        End If
+        If a = 16 Then
+            PictureBox9.BackColor = Color.LightSteelBlue
+        End If
+        If a = 17 Then
+            PictureBox8.BackColor = Color.LightSteelBlue
+        End If
+        If a = 18 Then
+            PictureBox7.BackColor = Color.LightSteelBlue
+            Timer4.Interval = 2000
+        End If
+        If a = 19 Then
+            PictureBox36.BackColor = Color.FromArgb(255, 128, 128)
+            PictureBox32.BackColor = Color.FromArgb(255, 128, 128)
+            Timer4.Interval = 1500
+        End If
+        If a = 20 Then
+            PictureBox6.BackColor = Color.LightSteelBlue
+        End If
+        If a = 21 Then
+            PictureBox5.BackColor = Color.LightSteelBlue
+        End If
+        If a = 22 Then
+            PictureBox4.BackColor = Color.LightSteelBlue
+        End If
+        If a = 23 Then
+            PictureBox3.BackColor = Color.LightSteelBlue
+        End If
+        If a = 24 Then
+            PictureBox2.BackColor = Color.LightSteelBlue
+            eventos = eventos & "[" & Tiempo & "] " & vbCrLf & "Se han arreglado los problemas, preparando cambio de fuente" & vbCrLf
+            txtEventos.Text = eventos
+            Tt = 2
+            Timer3.Interval = 3000
+            Timer3.Enabled = True
+            Timer3.Start()
+            Timer4.Stop()
+        End If
+        a = a + 1
+
 
     End Sub
 
@@ -611,44 +633,6 @@
     End Sub
 
     Private Sub btnDetener_Click(sender As Object, e As EventArgs) Handles btnDetener.Click
-        'Para que se reinicie los colores
-        PictureBox2.BackColor = Color.LightSteelBlue
-        PictureBox3.BackColor = Color.LightSteelBlue
-        PictureBox4.BackColor = Color.LightSteelBlue
-        PictureBox5.BackColor = Color.LightSteelBlue
-        PictureBox6.BackColor = Color.LightSteelBlue
-        PictureBox7.BackColor = Color.LightSteelBlue
-        PictureBox8.BackColor = Color.LightSteelBlue
-        PictureBox9.BackColor = Color.LightSteelBlue
-        PictureBox10.BackColor = Color.LightSteelBlue
-        PictureBox11.BackColor = Color.LightSteelBlue
-        PictureBox12.BackColor = Color.LightSteelBlue
-        PictureBox13.BackColor = Color.LightSteelBlue
-        PictureBox14.BackColor = Color.LightSteelBlue
-        PictureBox15.BackColor = Color.LightSteelBlue
-        PictureBox16.BackColor = Color.LightSteelBlue
-        PictureBox17.BackColor = Color.LightSteelBlue
-        PictureBox18.BackColor = Color.LightSteelBlue
-        PictureBox19.BackColor = Color.LightSteelBlue
-        PictureBox20.BackColor = Color.LightSteelBlue
-        PictureBox21.BackColor = Color.LightSteelBlue
-        PictureBox30.BackColor = Color.Red
-        PictureBox29.BackColor = Color.White
-        PictureBox43.BackColor = Color.White
-        PictureBox45.BackColor = Color.White
-        PictureBox41.BackColor = Color.Silver
-        PictureBox46.BackColor = Color.Silver
-        PictureBox40.BackColor = Color.Silver
-        PictureBox39.BackColor = Color.Silver
-        PictureBox35.BackColor = Color.Silver
-        PictureBox38.BackColor = Color.Silver
-        PictureBox34.BackColor = Color.Silver
-        PictureBox37.BackColor = Color.Silver
-        PictureBox33.BackColor = Color.Silver
-        PictureBox36.BackColor = Color.Silver
-        PictureBox32.BackColor = Color.Silver
-
-
         eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "La simulación se ha detenido."
         txtInterior.Enabled = False
         txtOff.Enabled = False
@@ -668,7 +652,6 @@
         Timer2.Stop()
         Timer3.Stop()
         Timer4.Stop()
-        PictureBox30.BackColor = Color.Red
     End Sub
 
     Private Sub txtOff_TextChanged(sender As Object, e As EventArgs) Handles txtOff.TextChanged
@@ -703,6 +686,17 @@
         Reanudar.Enabled = False
         txtEventos.Text = eventos
         Timer1.Start()
+        If Tt = 1 Then
+            Timer4.Start()
+            Timer4.Interval = 1500
+            If a < 2 Then
+                a = 2
+            End If
+        End If
+        If Tt = -2 Or Tt = -1 Or Tt = 0 Or Tt = 2 Then
+                Timer3.Start()
+            Timer3.Interval = 3000
+        End If
     End Sub
 End Class
 
