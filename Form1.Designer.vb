@@ -685,11 +685,11 @@ Partial Class Form1
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Label10.Font = New System.Drawing.Font("Arial", 12.0!)
-<<<<<<< HEAD
+
         Me.Label10.Location = New System.Drawing.Point(870, 235)
-=======
+
         Me.Label10.Location = New System.Drawing.Point(870, 233)
->>>>>>> 9dbaed16cda691bed0e3d7dfeb96d3ccaaa4bea5
+
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(120, 18)
         Me.Label10.TabIndex = 61
@@ -717,22 +717,22 @@ Partial Class Form1
         'txtOff
         '
         Me.txtOff.Enabled = False
-<<<<<<< HEAD
+
         Me.txtOff.Location = New System.Drawing.Point(996, 236)
-=======
+
         Me.txtOff.Location = New System.Drawing.Point(993, 232)
->>>>>>> 9dbaed16cda691bed0e3d7dfeb96d3ccaaa4bea5
+
         Me.txtOff.Name = "txtOff"
         Me.txtOff.Size = New System.Drawing.Size(60, 20)
         Me.txtOff.TabIndex = 64
         '
         'btnOff
         '
-<<<<<<< HEAD
+
         Me.btnOff.Location = New System.Drawing.Point(1062, 234)
-=======
+
         Me.btnOff.Location = New System.Drawing.Point(1059, 231)
->>>>>>> 9dbaed16cda691bed0e3d7dfeb96d3ccaaa4bea5
+
         Me.btnOff.Name = "btnOff"
         Me.btnOff.Size = New System.Drawing.Size(50, 23)
         Me.btnOff.TabIndex = 65
@@ -742,11 +742,11 @@ Partial Class Form1
         'txtInterior
         '
         Me.txtInterior.Enabled = False
-<<<<<<< HEAD
+
         Me.txtInterior.Location = New System.Drawing.Point(1050, 162)
-=======
+
         Me.txtInterior.Location = New System.Drawing.Point(1045, 163)
->>>>>>> 9dbaed16cda691bed0e3d7dfeb96d3ccaaa4bea5
+
         Me.txtInterior.Name = "txtInterior"
         Me.txtInterior.Size = New System.Drawing.Size(62, 20)
         Me.txtInterior.TabIndex = 67
@@ -1102,13 +1102,12 @@ Partial Class Form1
         Me.Reanudar.TabIndex = 80
         Me.Reanudar.Text = "Reanudar"
         Me.Reanudar.UseVisualStyleBackColor = True
-<<<<<<< HEAD
+
         '
         'Timer5
         '
         Me.Timer5.Interval = 6000
-=======
->>>>>>> 9dbaed16cda691bed0e3d7dfeb96d3ccaaa4bea5
+
         '
         'Form1
         '
