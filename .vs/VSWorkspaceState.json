@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
     "",
+    "\\bin",
+    "\\bin\\Debug",
     "\\My Project"
   ],
   "SelectedNode": "\\DataCenter.sln",
