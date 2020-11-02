@@ -74,7 +74,6 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.btnFalla = New System.Windows.Forms.Button()
         Me.btnSimular = New System.Windows.Forms.Button()
         Me.btnCausar = New System.Windows.Forms.Button()
         Me.btnProvocar = New System.Windows.Forms.Button()
@@ -120,6 +119,7 @@ Partial Class Form1
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.Reanudar = New System.Windows.Forms.Button()
+        Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -644,21 +644,11 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Label9.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label9.Location = New System.Drawing.Point(913, 264)
+        Me.Label9.Location = New System.Drawing.Point(913, 283)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(155, 18)
         Me.Label9.TabIndex = 56
         Me.Label9.Text = "Control de incidentes"
-        '
-        'btnFalla
-        '
-        Me.btnFalla.Enabled = False
-        Me.btnFalla.Location = New System.Drawing.Point(916, 291)
-        Me.btnFalla.Name = "btnFalla"
-        Me.btnFalla.Size = New System.Drawing.Size(152, 23)
-        Me.btnFalla.TabIndex = 57
-        Me.btnFalla.Text = "Provocar falla eléctrica"
-        Me.btnFalla.UseVisualStyleBackColor = True
         '
         'btnSimular
         '
@@ -695,7 +685,11 @@ Partial Class Form1
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Label10.Font = New System.Drawing.Font("Arial", 12.0!)
+<<<<<<< HEAD
+        Me.Label10.Location = New System.Drawing.Point(870, 235)
+=======
         Me.Label10.Location = New System.Drawing.Point(870, 233)
+>>>>>>> 9dbaed16cda691bed0e3d7dfeb96d3ccaaa4bea5
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(120, 18)
         Me.Label10.TabIndex = 61
@@ -723,24 +717,36 @@ Partial Class Form1
         'txtOff
         '
         Me.txtOff.Enabled = False
+<<<<<<< HEAD
+        Me.txtOff.Location = New System.Drawing.Point(996, 236)
+=======
         Me.txtOff.Location = New System.Drawing.Point(993, 232)
+>>>>>>> 9dbaed16cda691bed0e3d7dfeb96d3ccaaa4bea5
         Me.txtOff.Name = "txtOff"
         Me.txtOff.Size = New System.Drawing.Size(60, 20)
         Me.txtOff.TabIndex = 64
         '
         'btnOff
         '
+<<<<<<< HEAD
+        Me.btnOff.Location = New System.Drawing.Point(1062, 234)
+=======
         Me.btnOff.Location = New System.Drawing.Point(1059, 231)
+>>>>>>> 9dbaed16cda691bed0e3d7dfeb96d3ccaaa4bea5
         Me.btnOff.Name = "btnOff"
         Me.btnOff.Size = New System.Drawing.Size(50, 23)
         Me.btnOff.TabIndex = 65
-        Me.btnOff.Text = "On/Off"
+        Me.btnOff.Text = "Off"
         Me.btnOff.UseVisualStyleBackColor = True
         '
         'txtInterior
         '
         Me.txtInterior.Enabled = False
+<<<<<<< HEAD
+        Me.txtInterior.Location = New System.Drawing.Point(1050, 162)
+=======
         Me.txtInterior.Location = New System.Drawing.Point(1045, 163)
+>>>>>>> 9dbaed16cda691bed0e3d7dfeb96d3ccaaa4bea5
         Me.txtInterior.Name = "txtInterior"
         Me.txtInterior.Size = New System.Drawing.Size(62, 20)
         Me.txtInterior.TabIndex = 67
@@ -1096,6 +1102,13 @@ Partial Class Form1
         Me.Reanudar.TabIndex = 80
         Me.Reanudar.Text = "Reanudar"
         Me.Reanudar.UseVisualStyleBackColor = True
+<<<<<<< HEAD
+        '
+        'Timer5
+        '
+        Me.Timer5.Interval = 6000
+=======
+>>>>>>> 9dbaed16cda691bed0e3d7dfeb96d3ccaaa4bea5
         '
         'Form1
         '
@@ -1143,7 +1156,6 @@ Partial Class Form1
         Me.Controls.Add(Me.btnProvocar)
         Me.Controls.Add(Me.btnCausar)
         Me.Controls.Add(Me.btnSimular)
-        Me.Controls.Add(Me.btnFalla)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label6)
@@ -1301,7 +1313,6 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents btnFalla As Button
     Friend WithEvents btnSimular As Button
     Friend WithEvents btnCausar As Button
     Friend WithEvents btnProvocar As Button
@@ -1347,4 +1358,5 @@ Partial Class Form1
     Friend WithEvents Timer3 As Timer
     Friend WithEvents Timer4 As Timer
     Friend WithEvents Reanudar As Button
+    Friend WithEvents Timer5 As Timer
 End Class
