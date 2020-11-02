@@ -47,7 +47,7 @@
         btnRed.Enabled = True
         btnSimular.Enabled = True
         btnDetener.Enabled = True
-        btnIniciar.Enabled = False
+        btnIniciar.Enabled = True
         Reanudar.Enabled = False
         txtInterior.Text = StringInterior
         txtInterior.Enabled = True
