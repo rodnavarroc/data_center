@@ -695,7 +695,7 @@ Partial Class Form1
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Label10.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label10.Location = New System.Drawing.Point(870, 227)
+        Me.Label10.Location = New System.Drawing.Point(870, 233)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(120, 18)
         Me.Label10.TabIndex = 61
@@ -713,7 +713,7 @@ Partial Class Form1
         'btnActualizar
         '
         Me.btnActualizar.Enabled = False
-        Me.btnActualizar.Location = New System.Drawing.Point(916, 183)
+        Me.btnActualizar.Location = New System.Drawing.Point(916, 191)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(152, 23)
         Me.btnActualizar.TabIndex = 63
@@ -723,14 +723,14 @@ Partial Class Form1
         'txtOff
         '
         Me.txtOff.Enabled = False
-        Me.txtOff.Location = New System.Drawing.Point(996, 224)
+        Me.txtOff.Location = New System.Drawing.Point(993, 232)
         Me.txtOff.Name = "txtOff"
         Me.txtOff.Size = New System.Drawing.Size(60, 20)
         Me.txtOff.TabIndex = 64
         '
         'btnOff
         '
-        Me.btnOff.Location = New System.Drawing.Point(1062, 224)
+        Me.btnOff.Location = New System.Drawing.Point(1059, 231)
         Me.btnOff.Name = "btnOff"
         Me.btnOff.Size = New System.Drawing.Size(50, 23)
         Me.btnOff.TabIndex = 65
@@ -740,9 +740,9 @@ Partial Class Form1
         'txtInterior
         '
         Me.txtInterior.Enabled = False
-        Me.txtInterior.Location = New System.Drawing.Point(1062, 162)
+        Me.txtInterior.Location = New System.Drawing.Point(1045, 163)
         Me.txtInterior.Name = "txtInterior"
-        Me.txtInterior.Size = New System.Drawing.Size(50, 20)
+        Me.txtInterior.Size = New System.Drawing.Size(62, 20)
         Me.txtInterior.TabIndex = 67
         '
         'Label12
@@ -833,7 +833,6 @@ Partial Class Form1
         '
         Me.Timer2.Interval = 1000
         '
-
         'PictureBox29
         '
         Me.PictureBox29.Location = New System.Drawing.Point(432, 538)
@@ -1086,7 +1085,7 @@ Partial Class Form1
         'Timer4
         '
         Me.Timer4.Interval = 1000
-
+        '
         'Reanudar
         '
         Me.Reanudar.Enabled = False
@@ -1096,7 +1095,6 @@ Partial Class Form1
         Me.Reanudar.TabIndex = 80
         Me.Reanudar.Text = "Reanudar"
         Me.Reanudar.UseVisualStyleBackColor = True
-
         '
         'Form1
         '
@@ -1104,7 +1102,6 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1131, 571)
-
         Me.Controls.Add(Me.TextBox20)
         Me.Controls.Add(Me.TextBox19)
         Me.Controls.Add(Me.TextBox18)
@@ -1128,7 +1125,6 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox46)
         Me.Controls.Add(Me.PictureBox30)
         Me.Controls.Add(Me.PictureBox29)
-
         Me.Controls.Add(Me.Reanudar)
         Me.Controls.Add(Me.btnDetener)
         Me.Controls.Add(Me.btnIniciar)
