@@ -7,14 +7,10 @@
     Public Shared exterior As Integer = 45
     Public Shared I As Long
     Public Shared X As Long
-<<<<<<< HEAD
     Public Shared Tt As Long = 0
     Public Shared a As Long
-    Public Shared Tiempo As String
     Public Shared apagon As String = ""
-=======
     Public Shared Tiempo As String = "00:00"
->>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
     Public Shared eventos As String = "" 'String eventos sirve para mostrar los eventos ocurridos en el registro de eventos.
 
     Private Sub ActualizarValores(sender As Object, e As EventArgs) Handles btnActualizar.Click
@@ -323,7 +319,6 @@
         btnCausar.Enabled = False
 
         txtInterior.Enabled = False
-        txtExt.Enabled = False
         txtOff.Enabled = False
         btnActualizar.Enabled = False
         btnFalla.Enabled = False
@@ -412,7 +407,6 @@
             eventos = eventos & "[" & Tiempo & "] " & vbCrLf & "La servidores han sido conectados a la fuente de alimentación principal" & vbCrLf
             btnCausar.Enabled = True
             txtInterior.Enabled = True
-            txtExt.Enabled = True
             txtOff.Enabled = True
             btnActualizar.Enabled = True
             btnFalla.Enabled = True
@@ -676,11 +670,6 @@
         PictureBox30.BackColor = Color.Red
     End Sub
 
-    Private Sub txtExt_TextChanged(sender As Object, e As EventArgs) Handles txtExt.TextChanged
-
-    End Sub
-
-<<<<<<< HEAD
     Private Sub txtOff_TextChanged(sender As Object, e As EventArgs) Handles txtOff.TextChanged
 
     End Sub
@@ -693,7 +682,6 @@
 
     End Sub
 
-=======
     Private Sub btnReanudar_Click(sender As Object, e As EventArgs) Handles Reanudar.Click
         eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "La simulación se ha reanudado."
         txtEventos.Text = eventos 'se cambia el texto del cuadro "Registro de eventos"
@@ -715,7 +703,6 @@
         txtEventos.Text = eventos
         Timer1.Start()
     End Sub
->>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
 End Class
 
 

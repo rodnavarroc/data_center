@@ -94,7 +94,6 @@ Partial Class Form1
         Me.btnDetener = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-<<<<<<< HEAD
         Me.PictureBox29 = New System.Windows.Forms.PictureBox()
         Me.PictureBox30 = New System.Windows.Forms.PictureBox()
         Me.PictureBox46 = New System.Windows.Forms.PictureBox()
@@ -120,9 +119,7 @@ Partial Class Form1
         Me.TextBox20 = New System.Windows.Forms.TextBox()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
-=======
         Me.Reanudar = New System.Windows.Forms.Button()
->>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -836,7 +833,7 @@ Partial Class Form1
         '
         Me.Timer2.Interval = 1000
         '
-<<<<<<< HEAD
+
         'PictureBox29
         '
         Me.PictureBox29.Location = New System.Drawing.Point(432, 538)
@@ -1089,7 +1086,7 @@ Partial Class Form1
         'Timer4
         '
         Me.Timer4.Interval = 1000
-=======
+
         'Reanudar
         '
         Me.Reanudar.Enabled = False
@@ -1099,7 +1096,7 @@ Partial Class Form1
         Me.Reanudar.TabIndex = 80
         Me.Reanudar.Text = "Reanudar"
         Me.Reanudar.UseVisualStyleBackColor = True
->>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
+
         '
         'Form1
         '
@@ -1107,7 +1104,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1131, 571)
-<<<<<<< HEAD
+
         Me.Controls.Add(Me.TextBox20)
         Me.Controls.Add(Me.TextBox19)
         Me.Controls.Add(Me.TextBox18)
@@ -1131,9 +1128,8 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox46)
         Me.Controls.Add(Me.PictureBox30)
         Me.Controls.Add(Me.PictureBox29)
-=======
+
         Me.Controls.Add(Me.Reanudar)
->>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
         Me.Controls.Add(Me.btnDetener)
         Me.Controls.Add(Me.btnIniciar)
         Me.Controls.Add(Me.btnRed)
@@ -1328,7 +1324,6 @@ Partial Class Form1
     Friend WithEvents btnDetener As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
-<<<<<<< HEAD
     Friend WithEvents PictureBox29 As PictureBox
     Friend WithEvents PictureBox30 As PictureBox
     Friend WithEvents PictureBox46 As PictureBox
@@ -1354,7 +1349,5 @@ Partial Class Form1
     Friend WithEvents TextBox20 As TextBox
     Friend WithEvents Timer3 As Timer
     Friend WithEvents Timer4 As Timer
-=======
     Friend WithEvents Reanudar As Button
->>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
 End Class
