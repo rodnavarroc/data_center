@@ -792,6 +792,7 @@ Partial Class Form1
         Me.txtEventos.Multiline = True
         Me.txtEventos.Name = "txtEventos"
         Me.txtEventos.ReadOnly = True
+        Me.txtEventos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtEventos.Size = New System.Drawing.Size(180, 445)
         Me.txtEventos.TabIndex = 76
         Me.txtEventos.Text = "..."
