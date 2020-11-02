@@ -21,3 +21,15 @@ C:\Users\Fam\Source\Repos\data_center\obj\Debug\DataCenter.vbproj.CoreCompileInp
 C:\Users\Fam\Source\Repos\data_center\obj\Debug\DataCenter.exe
 C:\Users\Fam\Source\Repos\data_center\obj\Debug\DataCenter.xml
 C:\Users\Fam\Source\Repos\data_center\obj\Debug\DataCenter.pdb
+C:\Users\David\Source\Repos\data_center\bin\Debug\DataCenter.exe.config
+C:\Users\David\Source\Repos\data_center\bin\Debug\DataCenter.exe
+C:\Users\David\Source\Repos\data_center\bin\Debug\DataCenter.pdb
+C:\Users\David\Source\Repos\data_center\bin\Debug\DataCenter.xml
+C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.vbprojAssemblyReference.cache
+C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.Form1.resources
+C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.Resources.resources
+C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.vbproj.GenerateResource.cache
+C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.vbproj.CoreCompileInputs.cache
+C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.exe
+C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.xml
+C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.pdb

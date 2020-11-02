@@ -7,7 +7,10 @@
     Public Shared exterior As Integer = 25
     Public Shared I As Long
     Public Shared X As Long
+    Public Shared Tt As Long = 0
+    Public Shared a As Long
     Public Shared Tiempo As String
+    Public Shared apagon As String = ""
     Public Shared eventos As String = "" 'String eventos sirve para mostrar los eventos ocurridos en el registro de eventos.
 
     Private Sub ActualizarValores(sender As Object, e As EventArgs) Handles btnActualizar.Click
@@ -69,6 +72,7 @@
         PictureBox20.BackColor = Color.LightSteelBlue
         PictureBox21.BackColor = Color.LightSteelBlue
 
+        PictureBox30.BackColor = Color.Red
 
     End Sub
 
@@ -306,74 +310,199 @@
     End Sub
 
     Private Sub btnCausar_Click(sender As Object, e As EventArgs) Handles btnCausar.Click
+        btnCausar.Enabled = False
 
-        If PictureBox2.BackColor = Color.LightSteelBlue Or
-        PictureBox3.BackColor = Color.LightSteelBlue Or
-        PictureBox4.BackColor = Color.LightSteelBlue Or
-        PictureBox5.BackColor = Color.LightSteelBlue Or
-        PictureBox6.BackColor = Color.LightSteelBlue Or
-        PictureBox7.BackColor = Color.LightSteelBlue Or
-        PictureBox8.BackColor = Color.LightSteelBlue Or
-        PictureBox9.BackColor = Color.LightSteelBlue Or
-        PictureBox10.BackColor = Color.LightSteelBlue Or
-        PictureBox11.BackColor = Color.LightSteelBlue Or
-        PictureBox12.BackColor = Color.LightSteelBlue Or
-        PictureBox13.BackColor = Color.LightSteelBlue Or
-        PictureBox14.BackColor = Color.LightSteelBlue Or
-        PictureBox15.BackColor = Color.LightSteelBlue Or
-        PictureBox16.BackColor = Color.LightSteelBlue Or
-        PictureBox17.BackColor = Color.LightSteelBlue Or
-        PictureBox18.BackColor = Color.LightSteelBlue Or
-        PictureBox19.BackColor = Color.LightSteelBlue Or
-        PictureBox20.BackColor = Color.LightSteelBlue Or
-        PictureBox21.BackColor = Color.LightSteelBlue Then
-            PictureBox2.BackColor = Color.Gray
-            PictureBox3.BackColor = Color.Gray
-            PictureBox4.BackColor = Color.Gray
-            PictureBox5.BackColor = Color.Gray
-            PictureBox6.BackColor = Color.Gray
-            PictureBox7.BackColor = Color.Gray
-            PictureBox8.BackColor = Color.Gray
-            PictureBox9.BackColor = Color.Gray
-            PictureBox10.BackColor = Color.Gray
-            PictureBox11.BackColor = Color.Gray
-            PictureBox12.BackColor = Color.Gray
-            PictureBox13.BackColor = Color.Gray
-            PictureBox14.BackColor = Color.Gray
-            PictureBox15.BackColor = Color.Gray
-            PictureBox16.BackColor = Color.Gray
-            PictureBox17.BackColor = Color.Gray
-            PictureBox18.BackColor = Color.Gray
-            PictureBox19.BackColor = Color.Gray
-            PictureBox20.BackColor = Color.Gray
-            PictureBox21.BackColor = Color.Gray
-            eventos = eventos & vbCrLf & "[" & Tiempo & "]" & "Error en el Data Center.." & vbCrLf & "Apagando servidores.."
-            txtEventos.Text = eventos
+        txtInterior.Enabled = False
+        txtExt.Enabled = False
+        txtOff.Enabled = False
+        btnActualizar.Enabled = False
+        btnFalla.Enabled = False
+        btnMantenimiento.Enabled = False
+        btnOff.Enabled = False
+        btnProvocar.Enabled = False
+        btnRed.Enabled = False
+        btnSimular.Enabled = False
+        btnDetener.Enabled = Enabled
+        btnIniciar.Enabled = False
+
+        'Cambio de color en la energía
+        PictureBox30.BackColor = Color.White
+        PictureBox29.BackColor = Color.Red
+        PictureBox41.BackColor = Color.White
+        PictureBox46.BackColor = Color.White
+        PictureBox40.BackColor = Color.White
+        PictureBox39.BackColor = Color.White
+        PictureBox35.BackColor = Color.White
+        PictureBox38.BackColor = Color.White
+        PictureBox34.BackColor = Color.White
+        PictureBox37.BackColor = Color.White
+        PictureBox33.BackColor = Color.White
+        PictureBox36.BackColor = Color.White
+        PictureBox32.BackColor = Color.White
+
+        PictureBox2.BackColor = Color.Gray
+        PictureBox3.BackColor = Color.Gray
+        PictureBox4.BackColor = Color.Gray
+        PictureBox5.BackColor = Color.Gray
+        PictureBox6.BackColor = Color.Gray
+        PictureBox7.BackColor = Color.Gray
+        PictureBox8.BackColor = Color.Gray
+        PictureBox9.BackColor = Color.Gray
+        PictureBox10.BackColor = Color.Gray
+        PictureBox11.BackColor = Color.Gray
+        PictureBox12.BackColor = Color.Gray
+        PictureBox13.BackColor = Color.Gray
+        PictureBox14.BackColor = Color.Gray
+        PictureBox15.BackColor = Color.Gray
+        PictureBox16.BackColor = Color.Gray
+        PictureBox17.BackColor = Color.Gray
+        PictureBox18.BackColor = Color.Gray
+        PictureBox19.BackColor = Color.Gray
+        PictureBox20.BackColor = Color.Gray
+        PictureBox21.BackColor = Color.Gray
+        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & vbCrLf & "Ha sucedido un apagón, los servidores pasaron a recibir fuente de alimentación de respaldo" & vbCrLf
+        txtEventos.Text = eventos
+        Timer3.Enabled = True
+        Timer3.Start()
+        Timer3.Interval = 3000
+
+    End Sub
+
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+        Timer3.Interval = 2000
+        If Tt = 0 Then
+            PictureBox43.BackColor = Color.FromArgb(255, 128, 128)
+            PictureBox45.BackColor = Color.FromArgb(255, 128, 128)
+            PictureBox46.BackColor = Color.FromArgb(255, 128, 128)
+            PictureBox40.BackColor = Color.FromArgb(255, 128, 128)
+            PictureBox39.BackColor = Color.FromArgb(255, 128, 128)
+            Timer4.Enabled = True
+            a = 1
+            Timer4.Start()
+            Timer4.Interval = 1000
+            Timer3.Stop()
         End If
 
-        If PictureBox2.BackColor = Color.Gray And
-        PictureBox3.BackColor = Color.Gray And
-        PictureBox4.BackColor = Color.Gray And
-        PictureBox5.BackColor = Color.Gray And
-        PictureBox6.BackColor = Color.Gray And
-        PictureBox7.BackColor = Color.Gray And
-        PictureBox8.BackColor = Color.Gray And
-        PictureBox9.BackColor = Color.Gray And
-        PictureBox10.BackColor = Color.Gray And
-        PictureBox11.BackColor = Color.Gray And
-        PictureBox12.BackColor = Color.Gray And
-        PictureBox13.BackColor = Color.Gray And
-        PictureBox14.BackColor = Color.Gray And
-        PictureBox15.BackColor = Color.Gray And
-        PictureBox16.BackColor = Color.Gray And
-        PictureBox17.BackColor = Color.Gray And
-        PictureBox18.BackColor = Color.Gray And
-        PictureBox19.BackColor = Color.Gray And
-        PictureBox20.BackColor = Color.Gray And
-        PictureBox21.BackColor = Color.Gray Then
-            eventos = eventos & vbCrLf & "Los servidores se encuentran actualmente apagados."
+        If Tt = 1 Then
+            PictureBox30.BackColor = Color.Red
+            PictureBox29.BackColor = Color.White
+            PictureBox43.BackColor = Color.White
+            PictureBox45.BackColor = Color.White
+            PictureBox41.BackColor = Color.Silver
+            PictureBox46.BackColor = Color.Silver
+            PictureBox40.BackColor = Color.Silver
+            PictureBox39.BackColor = Color.Silver
+            PictureBox35.BackColor = Color.Silver
+            PictureBox38.BackColor = Color.Silver
+            PictureBox34.BackColor = Color.Silver
+            PictureBox37.BackColor = Color.Silver
+            PictureBox33.BackColor = Color.Silver
+            PictureBox36.BackColor = Color.Silver
+            PictureBox32.BackColor = Color.Silver
+            eventos = eventos & "[" & Tiempo & "] " & vbCrLf & "La servidores han sido conectados a la fuente de alimentación principal" & vbCrLf
             txtEventos.Text = eventos
+            btnCausar.Enabled = Enabled
+            Timer3.Stop()
+            Tt = 0
         End If
+
+    End Sub
+
+    Private Sub Timer4_Tick(sender As Object, e As EventArgs) Handles Timer4.Tick
+        If Tt = 0 Then
+            If a = 1 Then
+                eventos = eventos & "[" & Tiempo & "] " & vbCrLf & "Se están arreglando fallas de la fuente de alimentación inicial" & vbCrLf
+                txtEventos.Text = eventos
+                PictureBox35.BackColor = Color.FromArgb(255, 128, 128)
+                Timer4.Interval = 500
+            End If
+            If a = 2 Then
+                PictureBox21.BackColor = Color.LightSteelBlue
+            End If
+            If a = 3 Then
+                PictureBox20.BackColor = Color.LightSteelBlue
+            End If
+            If a = 4 Then
+                PictureBox19.BackColor = Color.LightSteelBlue
+            End If
+            If a = 5 Then
+                PictureBox18.BackColor = Color.LightSteelBlue
+            End If
+            If a = 6 Then
+                PictureBox17.BackColor = Color.LightSteelBlue
+                Timer4.Interval = 1000
+            End If
+            If a = 7 Then
+                PictureBox38.BackColor = Color.FromArgb(255, 128, 128)
+                PictureBox34.BackColor = Color.FromArgb(255, 128, 128)
+                Timer4.Interval = 500
+            End If
+            If a = 8 Then
+                PictureBox16.BackColor = Color.LightSteelBlue
+            End If
+            If a = 9 Then
+                PictureBox15.BackColor = Color.LightSteelBlue
+            End If
+            If a = 10 Then
+                PictureBox14.BackColor = Color.LightSteelBlue
+            End If
+            If a = 11 Then
+                PictureBox13.BackColor = Color.LightSteelBlue
+            End If
+            If a = 12 Then
+                PictureBox12.BackColor = Color.LightSteelBlue
+                Timer4.Interval = 1000
+            End If
+            If a = 13 Then
+                PictureBox37.BackColor = Color.FromArgb(255, 128, 128)
+                PictureBox33.BackColor = Color.FromArgb(255, 128, 128)
+                Timer4.Interval = 500
+            End If
+            If a = 14 Then
+                PictureBox11.BackColor = Color.LightSteelBlue
+            End If
+            If a = 15 Then
+                PictureBox10.BackColor = Color.LightSteelBlue
+            End If
+            If a = 16 Then
+                PictureBox9.BackColor = Color.LightSteelBlue
+            End If
+            If a = 17 Then
+                PictureBox8.BackColor = Color.LightSteelBlue
+            End If
+            If a = 18 Then
+                PictureBox7.BackColor = Color.LightSteelBlue
+                Timer4.Interval = 1000
+            End If
+            If a = 19 Then
+                PictureBox36.BackColor = Color.FromArgb(255, 128, 128)
+                PictureBox32.BackColor = Color.FromArgb(255, 128, 128)
+                Timer4.Interval = 500
+            End If
+            If a = 20 Then
+                PictureBox6.BackColor = Color.LightSteelBlue
+            End If
+            If a = 21 Then
+                PictureBox5.BackColor = Color.LightSteelBlue
+            End If
+            If a = 22 Then
+                PictureBox4.BackColor = Color.LightSteelBlue
+            End If
+            If a = 23 Then
+                PictureBox3.BackColor = Color.LightSteelBlue
+            End If
+            If a = 24 Then
+                PictureBox2.BackColor = Color.LightSteelBlue
+                eventos = eventos & "[" & Tiempo & "] " & vbCrLf & "Se han arreglado los problemas, preparando cambio de fuente" & vbCrLf
+                txtEventos.Text = eventos
+                Tt = 1
+                Timer3.Enabled = True
+                Timer3.Start()
+                Timer4.Stop()
+            End If
+            a = a + 1
+        End If
+
     End Sub
 
     Private Sub btnProvocar_Click(sender As Object, e As EventArgs) Handles btnProvocar.Click
@@ -465,6 +594,44 @@
     End Sub
 
     Private Sub btnDetener_Click(sender As Object, e As EventArgs) Handles btnDetener.Click
+        'Para que se reinicie los colores
+        PictureBox2.BackColor = Color.LightSteelBlue
+        PictureBox3.BackColor = Color.LightSteelBlue
+        PictureBox4.BackColor = Color.LightSteelBlue
+        PictureBox5.BackColor = Color.LightSteelBlue
+        PictureBox6.BackColor = Color.LightSteelBlue
+        PictureBox7.BackColor = Color.LightSteelBlue
+        PictureBox8.BackColor = Color.LightSteelBlue
+        PictureBox9.BackColor = Color.LightSteelBlue
+        PictureBox10.BackColor = Color.LightSteelBlue
+        PictureBox11.BackColor = Color.LightSteelBlue
+        PictureBox12.BackColor = Color.LightSteelBlue
+        PictureBox13.BackColor = Color.LightSteelBlue
+        PictureBox14.BackColor = Color.LightSteelBlue
+        PictureBox15.BackColor = Color.LightSteelBlue
+        PictureBox16.BackColor = Color.LightSteelBlue
+        PictureBox17.BackColor = Color.LightSteelBlue
+        PictureBox18.BackColor = Color.LightSteelBlue
+        PictureBox19.BackColor = Color.LightSteelBlue
+        PictureBox20.BackColor = Color.LightSteelBlue
+        PictureBox21.BackColor = Color.LightSteelBlue
+        PictureBox30.BackColor = Color.Red
+        PictureBox29.BackColor = Color.White
+        PictureBox43.BackColor = Color.White
+        PictureBox45.BackColor = Color.White
+        PictureBox41.BackColor = Color.Silver
+        PictureBox46.BackColor = Color.Silver
+        PictureBox40.BackColor = Color.Silver
+        PictureBox39.BackColor = Color.Silver
+        PictureBox35.BackColor = Color.Silver
+        PictureBox38.BackColor = Color.Silver
+        PictureBox34.BackColor = Color.Silver
+        PictureBox37.BackColor = Color.Silver
+        PictureBox33.BackColor = Color.Silver
+        PictureBox36.BackColor = Color.Silver
+        PictureBox32.BackColor = Color.Silver
+
+
         eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "La simulación se ha detenido."
         txtInterior.Enabled = False
         txtExt.Enabled = False
@@ -481,6 +648,27 @@
         btnIniciar.Enabled = True
         txtEventos.Text = eventos
         Timer1.Stop()
+        Timer2.Stop()
+        Timer3.Stop()
+        Timer4.Stop()
+        PictureBox30.BackColor = Color.Red
     End Sub
+
+    Private Sub txtExt_TextChanged(sender As Object, e As EventArgs) Handles txtExt.TextChanged
+
+    End Sub
+
+    Private Sub txtOff_TextChanged(sender As Object, e As EventArgs) Handles txtOff.TextChanged
+
+    End Sub
+
+    Private Sub txtInterior_TextChanged(sender As Object, e As EventArgs) Handles txtInterior.TextChanged
+
+    End Sub
+
+    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
+
+    End Sub
+
 End Class
 
