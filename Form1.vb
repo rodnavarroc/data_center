@@ -405,6 +405,7 @@
             PictureBox36.BackColor = Color.Silver
             PictureBox32.BackColor = Color.Silver
             eventos = eventos & "[" & Tiempo & "] " & vbCrLf & "La servidores han sido conectados a la fuente de alimentación principal" & vbCrLf
+            txtEventos.Text = eventos
             btnCausar.Enabled = True
             txtInterior.Enabled = True
             txtOff.Enabled = True
