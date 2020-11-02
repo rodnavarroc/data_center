@@ -72,7 +72,6 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.btnFalla = New System.Windows.Forms.Button()
@@ -84,7 +83,6 @@ Partial Class Form1
         Me.btnActualizar = New System.Windows.Forms.Button()
         Me.txtOff = New System.Windows.Forms.TextBox()
         Me.btnOff = New System.Windows.Forms.Button()
-        Me.txtExt = New System.Windows.Forms.TextBox()
         Me.txtInterior = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox44 = New System.Windows.Forms.PictureBox()
@@ -96,6 +94,7 @@ Partial Class Form1
         Me.btnDetener = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+<<<<<<< HEAD
         Me.PictureBox29 = New System.Windows.Forms.PictureBox()
         Me.PictureBox30 = New System.Windows.Forms.PictureBox()
         Me.PictureBox46 = New System.Windows.Forms.PictureBox()
@@ -121,6 +120,9 @@ Partial Class Form1
         Me.TextBox20 = New System.Windows.Forms.TextBox()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
+=======
+        Me.Reanudar = New System.Windows.Forms.Button()
+>>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -629,27 +631,16 @@ Partial Class Form1
         Me.Label6.TabIndex = 53
         Me.Label6.Text = "Incidente"
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label7.Location = New System.Drawing.Point(870, 63)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(151, 18)
-        Me.Label7.TabIndex = 54
-        Me.Label7.Text = "Temperatura exterior"
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label8.Location = New System.Drawing.Point(870, 90)
+        Me.Label8.Location = New System.Drawing.Point(870, 162)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(147, 18)
+        Me.Label8.Size = New System.Drawing.Size(174, 18)
         Me.Label8.TabIndex = 55
-        Me.Label8.Text = "Temperatura interior"
+        Me.Label8.Text = "Temperatura de entrada"
         '
         'Label9
         '
@@ -707,7 +698,7 @@ Partial Class Form1
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.Label10.Font = New System.Drawing.Font("Arial", 12.0!)
-        Me.Label10.Location = New System.Drawing.Point(867, 179)
+        Me.Label10.Location = New System.Drawing.Point(870, 227)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(120, 18)
         Me.Label10.TabIndex = 61
@@ -725,7 +716,7 @@ Partial Class Form1
         'btnActualizar
         '
         Me.btnActualizar.Enabled = False
-        Me.btnActualizar.Location = New System.Drawing.Point(916, 126)
+        Me.btnActualizar.Location = New System.Drawing.Point(916, 183)
         Me.btnActualizar.Name = "btnActualizar"
         Me.btnActualizar.Size = New System.Drawing.Size(152, 23)
         Me.btnActualizar.TabIndex = 63
@@ -735,34 +726,26 @@ Partial Class Form1
         'txtOff
         '
         Me.txtOff.Enabled = False
-        Me.txtOff.Location = New System.Drawing.Point(988, 179)
+        Me.txtOff.Location = New System.Drawing.Point(996, 224)
         Me.txtOff.Name = "txtOff"
         Me.txtOff.Size = New System.Drawing.Size(60, 20)
         Me.txtOff.TabIndex = 64
         '
         'btnOff
         '
-        Me.btnOff.Location = New System.Drawing.Point(1054, 177)
+        Me.btnOff.Location = New System.Drawing.Point(1062, 224)
         Me.btnOff.Name = "btnOff"
         Me.btnOff.Size = New System.Drawing.Size(50, 23)
         Me.btnOff.TabIndex = 65
         Me.btnOff.Text = "On/Off"
         Me.btnOff.UseVisualStyleBackColor = True
         '
-        'txtExt
-        '
-        Me.txtExt.Enabled = False
-        Me.txtExt.Location = New System.Drawing.Point(1027, 64)
-        Me.txtExt.Name = "txtExt"
-        Me.txtExt.Size = New System.Drawing.Size(77, 20)
-        Me.txtExt.TabIndex = 66
-        '
         'txtInterior
         '
         Me.txtInterior.Enabled = False
-        Me.txtInterior.Location = New System.Drawing.Point(1027, 91)
+        Me.txtInterior.Location = New System.Drawing.Point(1062, 162)
         Me.txtInterior.Name = "txtInterior"
-        Me.txtInterior.Size = New System.Drawing.Size(77, 20)
+        Me.txtInterior.Size = New System.Drawing.Size(50, 20)
         Me.txtInterior.TabIndex = 67
         '
         'Label12
@@ -828,17 +811,17 @@ Partial Class Form1
         '
         'btnIniciar
         '
-        Me.btnIniciar.Location = New System.Drawing.Point(916, 210)
+        Me.btnIniciar.Location = New System.Drawing.Point(916, 63)
         Me.btnIniciar.Name = "btnIniciar"
         Me.btnIniciar.Size = New System.Drawing.Size(152, 23)
         Me.btnIniciar.TabIndex = 78
-        Me.btnIniciar.Text = "Iniciar"
+        Me.btnIniciar.Text = "Iniciar / Reiniciar"
         Me.btnIniciar.UseVisualStyleBackColor = True
         '
         'btnDetener
         '
         Me.btnDetener.Enabled = False
-        Me.btnDetener.Location = New System.Drawing.Point(916, 235)
+        Me.btnDetener.Location = New System.Drawing.Point(916, 92)
         Me.btnDetener.Name = "btnDetener"
         Me.btnDetener.Size = New System.Drawing.Size(152, 23)
         Me.btnDetener.TabIndex = 79
@@ -853,6 +836,7 @@ Partial Class Form1
         '
         Me.Timer2.Interval = 1000
         '
+<<<<<<< HEAD
         'PictureBox29
         '
         Me.PictureBox29.Location = New System.Drawing.Point(432, 538)
@@ -1105,6 +1089,17 @@ Partial Class Form1
         'Timer4
         '
         Me.Timer4.Interval = 1000
+=======
+        'Reanudar
+        '
+        Me.Reanudar.Enabled = False
+        Me.Reanudar.Location = New System.Drawing.Point(916, 121)
+        Me.Reanudar.Name = "Reanudar"
+        Me.Reanudar.Size = New System.Drawing.Size(152, 23)
+        Me.Reanudar.TabIndex = 80
+        Me.Reanudar.Text = "Reanudar"
+        Me.Reanudar.UseVisualStyleBackColor = True
+>>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
         '
         'Form1
         '
@@ -1112,6 +1107,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1131, 571)
+<<<<<<< HEAD
         Me.Controls.Add(Me.TextBox20)
         Me.Controls.Add(Me.TextBox19)
         Me.Controls.Add(Me.TextBox18)
@@ -1135,6 +1131,9 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox46)
         Me.Controls.Add(Me.PictureBox30)
         Me.Controls.Add(Me.PictureBox29)
+=======
+        Me.Controls.Add(Me.Reanudar)
+>>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
         Me.Controls.Add(Me.btnDetener)
         Me.Controls.Add(Me.btnIniciar)
         Me.Controls.Add(Me.btnRed)
@@ -1143,7 +1142,6 @@ Partial Class Form1
         Me.Controls.Add(Me.btnMantenimiento)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.txtInterior)
-        Me.Controls.Add(Me.txtExt)
         Me.Controls.Add(Me.btnOff)
         Me.Controls.Add(Me.txtOff)
         Me.Controls.Add(Me.btnActualizar)
@@ -1155,7 +1153,6 @@ Partial Class Form1
         Me.Controls.Add(Me.btnFalla)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -1309,7 +1306,6 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents btnFalla As Button
@@ -1321,7 +1317,6 @@ Partial Class Form1
     Friend WithEvents btnActualizar As Button
     Friend WithEvents txtOff As TextBox
     Friend WithEvents btnOff As Button
-    Friend WithEvents txtExt As TextBox
     Friend WithEvents txtInterior As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents PictureBox44 As PictureBox
@@ -1333,6 +1328,7 @@ Partial Class Form1
     Friend WithEvents btnDetener As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
+<<<<<<< HEAD
     Friend WithEvents PictureBox29 As PictureBox
     Friend WithEvents PictureBox30 As PictureBox
     Friend WithEvents PictureBox46 As PictureBox
@@ -1358,4 +1354,7 @@ Partial Class Form1
     Friend WithEvents TextBox20 As TextBox
     Friend WithEvents Timer3 As Timer
     Friend WithEvents Timer4 As Timer
+=======
+    Friend WithEvents Reanudar As Button
+>>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
 End Class

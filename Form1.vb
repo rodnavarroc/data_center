@@ -3,22 +3,31 @@
 
 
     'Declaración de variables globales (no sé si sea correcto esto XD)
-    Public Shared interior As Integer = 17
-    Public Shared exterior As Integer = 25
+    Public Shared interior As Integer = 18
+    Public Shared exterior As Integer = 45
     Public Shared I As Long
     Public Shared X As Long
+<<<<<<< HEAD
     Public Shared Tt As Long = 0
     Public Shared a As Long
     Public Shared Tiempo As String
     Public Shared apagon As String = ""
+=======
+    Public Shared Tiempo As String = "00:00"
+>>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
     Public Shared eventos As String = "" 'String eventos sirve para mostrar los eventos ocurridos en el registro de eventos.
 
     Private Sub ActualizarValores(sender As Object, e As EventArgs) Handles btnActualizar.Click
-        If txtExt.Enabled = False Then 'Comprobamos si la simulación ya se inició. 
-            MessageBox.Show("Favor de iniciar la simulación")
-        ElseIf String.IsNullOrEmpty(txtExt.Text) Then 'Comprobamos que haya valor escrito en el txtExt.
-            MessageBox.Show("Introduce un valor")
+        If String.IsNullOrEmpty(txtInterior.Text) Then 'Comprobamos que haya valor escrito en el txtExt.
+            MessageBox.Show("Introduce un valor para la temperatura")
+        Else
+            Dim temperatura As String = txtInterior.Text
+            txtInterior.Text = temperatura
+            eventos = eventos & vbCrLf & "[" & Tiempo & "] " & String.Format("Temperatura {0}°C", temperatura)
+            txtEventos.Text = eventos
         End If
+
+
     End Sub
 
     Private Sub PictureBox21_Click(sender As Object, e As EventArgs) Handles PictureBox21.Click
@@ -32,10 +41,9 @@
         End If
         Dim StringInterior As String = interior.ToString 'Hacemos string la temperatura para pasarla al txtField
         Dim StringExterior As String = exterior.ToString
-        eventos = "[00:00] Simulación iniciada." & vbCrLf & "Temperatura exterior: 25°C" & vbCrLf & "Temperatura interior: 17°C" 'Añadimos este texto al string eventos
+        eventos = "[00:00] Simulación iniciada." & vbCrLf & String.Format("Humedad {0}%", exterior) & vbCrLf & String.Format("Temperatura {0}°C", interior) 'Añadimos este texto al string eventos
         txtEventos.Text = eventos 'se cambia el texto del cuadro "Registro de eventos"
         txtInterior.Enabled = True
-        txtExt.Enabled = True
         txtOff.Enabled = True
         btnActualizar.Enabled = True
         btnCausar.Enabled = True
@@ -46,10 +54,12 @@
         btnRed.Enabled = True
         btnSimular.Enabled = True
         btnDetener.Enabled = True
-        btnIniciar.Enabled = False
-        txtInterior.Text = StringInterior & "°C" 'Le concatenamos el °C
-        txtExt.Text = StringExterior & "°C"
-        txtInterior.Enabled = False
+        btnIniciar.Enabled = True
+        Reanudar.Enabled = False
+        txtInterior.Text = StringInterior
+        txtInterior.Enabled = True
+
+
 
         PictureBox2.BackColor = Color.LightSteelBlue
         PictureBox3.BackColor = Color.LightSteelBlue
@@ -297,7 +307,7 @@
         End If
     End Sub
 
-    Private Sub txtExt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtExt.KeyPress
+    Private Sub txtExt_KeyPress(sender As Object, e As KeyPressEventArgs)
         If Asc(e.KeyChar) <> 8 Then
             If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then 'Restricciones para aceptar solo numeros en el txtExt
                 e.Handled = True
@@ -322,7 +332,7 @@
         btnProvocar.Enabled = False
         btnRed.Enabled = False
         btnSimular.Enabled = False
-        btnDetener.Enabled = Enabled
+        btnDetener.Enabled = True
         btnIniciar.Enabled = False
 
         'Cambio de color en la energía
@@ -400,8 +410,20 @@
             PictureBox36.BackColor = Color.Silver
             PictureBox32.BackColor = Color.Silver
             eventos = eventos & "[" & Tiempo & "] " & vbCrLf & "La servidores han sido conectados a la fuente de alimentación principal" & vbCrLf
-            txtEventos.Text = eventos
-            btnCausar.Enabled = Enabled
+            btnCausar.Enabled = True
+            txtInterior.Enabled = True
+            txtExt.Enabled = True
+            txtOff.Enabled = True
+            btnActualizar.Enabled = True
+            btnFalla.Enabled = True
+            btnMantenimiento.Enabled = True
+            btnOff.Enabled = True
+            btnProvocar.Enabled = True
+            btnRed.Enabled = True
+            btnSimular.Enabled = True
+            btnDetener.Enabled = True
+            btnIniciar.Enabled = True
+
             Timer3.Stop()
             Tt = 0
         End If
@@ -634,7 +656,6 @@
 
         eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "La simulación se ha detenido."
         txtInterior.Enabled = False
-        txtExt.Enabled = False
         txtOff.Enabled = False
         btnActualizar.Enabled = False
         btnCausar.Enabled = False
@@ -646,6 +667,7 @@
         btnSimular.Enabled = False
         btnDetener.Enabled = False
         btnIniciar.Enabled = True
+        Reanudar.Enabled = True
         txtEventos.Text = eventos
         Timer1.Stop()
         Timer2.Stop()
@@ -658,6 +680,7 @@
 
     End Sub
 
+<<<<<<< HEAD
     Private Sub txtOff_TextChanged(sender As Object, e As EventArgs) Handles txtOff.TextChanged
 
     End Sub
@@ -670,5 +693,29 @@
 
     End Sub
 
+=======
+    Private Sub btnReanudar_Click(sender As Object, e As EventArgs) Handles Reanudar.Click
+        eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "La simulación se ha reanudado."
+        txtEventos.Text = eventos 'se cambia el texto del cuadro "Registro de eventos"
+        txtInterior.Enabled = True
+        txtOff.Enabled = True
+        btnActualizar.Enabled = True
+        btnCausar.Enabled = True
+        btnFalla.Enabled = True
+        btnMantenimiento.Enabled = True
+        btnOff.Enabled = True
+        btnProvocar.Enabled = True
+        btnRed.Enabled = True
+        btnSimular.Enabled = True
+        btnDetener.Enabled = True
+        btnIniciar.Enabled = False
+        txtInterior.Enabled = True
+        btnIniciar.Enabled = True
+        Reanudar.Enabled = False
+        txtEventos.Text = eventos
+        Timer1.Start()
+    End Sub
+>>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
 End Class
+
 

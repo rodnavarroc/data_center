@@ -21,6 +21,7 @@ C:\Users\Fam\Source\Repos\data_center\obj\Debug\DataCenter.vbproj.CoreCompileInp
 C:\Users\Fam\Source\Repos\data_center\obj\Debug\DataCenter.exe
 C:\Users\Fam\Source\Repos\data_center\obj\Debug\DataCenter.xml
 C:\Users\Fam\Source\Repos\data_center\obj\Debug\DataCenter.pdb
+<<<<<<< HEAD
 C:\Users\David\Source\Repos\data_center\bin\Debug\DataCenter.exe.config
 C:\Users\David\Source\Repos\data_center\bin\Debug\DataCenter.exe
 C:\Users\David\Source\Repos\data_center\bin\Debug\DataCenter.pdb
@@ -33,3 +34,17 @@ C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.vbproj.CoreCompileI
 C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.exe
 C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.xml
 C:\Users\David\Source\Repos\data_center\obj\Debug\DataCenter.pdb
+=======
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\obj\Debug\DataCenter.vbprojAssemblyReference.cache
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\obj\Debug\DataCenter.Form1.resources
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\obj\Debug\DataCenter.Resources.resources
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\obj\Debug\DataCenter.vbproj.GenerateResource.cache
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\obj\Debug\DataCenter.vbproj.CoreCompileInputs.cache
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\obj\Debug\DataCenter.exe
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\obj\Debug\DataCenter.xml
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\obj\Debug\DataCenter.pdb
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\bin\Debug\DataCenter.exe.config
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\bin\Debug\DataCenter.exe
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\bin\Debug\DataCenter.pdb
+C:\Users\Usuario\Source\Repos\rodnavarroc\data_center\bin\Debug\DataCenter.xml
+>>>>>>> 0247130f0525eb6ef6975b65bac071fe0549e9bf
