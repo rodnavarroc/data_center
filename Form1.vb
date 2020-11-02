@@ -681,18 +681,6 @@
         Timer5.Stop()
     End Sub
 
-    Private Sub txtOff_TextChanged(sender As Object, e As EventArgs) Handles txtOff.TextChanged
-
-    End Sub
-
-    Private Sub txtInterior_TextChanged(sender As Object, e As EventArgs) Handles txtInterior.TextChanged
-
-    End Sub
-
-    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
-
-    End Sub
-
     Private Sub btnReanudar_Click(sender As Object, e As EventArgs) Handles Reanudar.Click
         eventos = eventos & vbCrLf & "[" & Tiempo & "] " & "La simulación se ha reanudado."
         txtEventos.Text = eventos 'se cambia el texto del cuadro "Registro de eventos"
